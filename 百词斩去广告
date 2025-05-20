@@ -1,17 +1,13 @@
-#!name= 360行车助手去广告
-#!author= @🔔🐈
+#!name= 百词斩去广告
+#!author= @无名
 #!icon=https://gitlab.com/Nessk/Ness/-/raw/main/icon/zs/zs01.png
-#!desc= 就这样吧
+#!desc= 移除开屏广告、弹出广告
 #!loon_version= 3.3.0(853)
 
 
-[Rule]
-DOMAIN,api.che.360.cn,REJECT-VIDEO
-
 [MITM]
-hostname= *.che.360.cn
+hostname= advertise.baicizhan.com, advertise.baicizhan.com
 
 [Rewrite]
-^https?:\/\/iot\.che\.360\.cn\/static\/config\/services\/services\.json\? reject-dict
-^https?:\/\/iot\.che\.360\.cn\/static\/config\/home\/app_home\.json\? reject-dict
-^https?:\/\/api\.che\.360\.cn\/share_publics\/index_nav\? reject-dict
+^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/* reject-img
+^http:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* reject
