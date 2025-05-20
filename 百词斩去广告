@@ -1,0 +1,17 @@
+#!name= 360行车助手去广告
+#!author= @🔔🐈
+#!icon=https://gitlab.com/Nessk/Ness/-/raw/main/icon/zs/zs01.png
+#!desc= 就这样吧
+#!loon_version= 3.3.0(853)
+
+
+[Rule]
+DOMAIN,api.che.360.cn,REJECT-VIDEO
+
+[MITM]
+hostname= *.che.360.cn
+
+[Rewrite]
+^https?:\/\/iot\.che\.360\.cn\/static\/config\/services\/services\.json\? reject-dict
+^https?:\/\/iot\.che\.360\.cn\/static\/config\/home\/app_home\.json\? reject-dict
+^https?:\/\/api\.che\.360\.cn\/share_publics\/index_nav\? reject-dict
