@@ -6,11 +6,12 @@
 #!homepage= https://raw.githubusercontent.com/xbzl/Loon/refs/heads/main/README.md
 
 
-[MITM]
-hostname = %APPEND% advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
-
 [Rewrite]
 ^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/* reject-img
 ^http:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* reject
 ^https:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* reject
 ^https:\/\/ad\.bczcdn\.com\/cyaad\/images\/* reject-dict
+
+
+[MITM]
+hostname = %APPEND% advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
