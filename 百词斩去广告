@@ -7,7 +7,7 @@
 
 
 [MITM]
-hostname= advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
+hostname = %APPEND% advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
 
 [Rewrite]
 ^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/* reject-img
