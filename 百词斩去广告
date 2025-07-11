@@ -14,4 +14,4 @@
 
 
 [MITM]
-hostname = %APPEND% advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
+hostname=advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
