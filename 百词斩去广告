@@ -6,7 +6,8 @@
 #!homepage= https://raw.githubusercontent.com/xbzl/Loon/refs/heads/main/README.md
 
 
-[Rewrite]
+[Map Local]
+#弹窗配置
 ^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/* data-type=text data="{}" status-code=200
 ^http:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* data-type=text data="{}" status-code=200
 ^https:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* data-type=text data="{}" status-code=200
@@ -14,4 +15,4 @@
 
 
 [MITM]
-hostname=advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
+hostname = %APPEND% advertise.baicizhan.com, advertise.bczeducation.cn, ad.bczcdn.com
