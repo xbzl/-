@@ -7,10 +7,10 @@
 
 
 [Rewrite]
-^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/* reject-img
-^http:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* reject
-^https:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* reject
-^https:\/\/ad\.bczcdn\.com\/cyaad\/images\/* reject-dict
+^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/* data-type=text data="{}" status-code=200
+^http:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* data-type=text data="{}" status-code=200
+^https:\/\/advertise\.bczeducation\.cn\/rpc\/advertise\/* data-type=text data="{}" status-code=200
+^https:\/\/ad\.bczcdn\.com\/cyaad\/images\/* data-type=text data="{}" status-code=200
 
 
 [MITM]
